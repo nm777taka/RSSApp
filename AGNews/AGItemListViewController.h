@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AGDetailViewController : UIViewController
+@interface AGItemListViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
 

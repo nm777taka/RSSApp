@@ -10,7 +10,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface AGMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface AGChannelListViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

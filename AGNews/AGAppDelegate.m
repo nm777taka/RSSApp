@@ -8,7 +8,7 @@
 
 #import "AGAppDelegate.h"
 
-#import "AGMasterViewController.h"
+#import "AGChannelListViewController.h"
 
 @implementation AGAppDelegate
 
@@ -20,7 +20,7 @@
 {
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    AGMasterViewController *controller = (AGMasterViewController *)navigationController.topViewController;
+    AGChannelListViewController *controller = (AGChannelListViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }

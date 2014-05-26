@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
-#import "AGDetailViewController.h"
+#import "AGItemListViewController.h"
 
-@interface AGDetailViewController ()
+@interface AGItemListViewController ()
 - (void)configureView;
 @end
 
-@implementation AGDetailViewController
+@implementation AGItemListViewController
 
 #pragma mark - Managing the detail item
 

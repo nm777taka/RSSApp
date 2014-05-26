@@ -6,15 +6,15 @@
 //  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
-#import "AGMasterViewController.h"
+#import "AGChannelListViewController.h"
 
-#import "AGDetailViewController.h"
+#import "AGItemListViewController.h"
 
-@interface AGMasterViewController ()
+@interface AGChannelListViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
-@implementation AGMasterViewController
+@implementation AGChannelListViewController
 
 - (void)awakeFromNib
 {
