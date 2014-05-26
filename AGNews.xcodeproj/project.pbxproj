@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2721F79A19338E5700FA2BBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2721F79919338E5600FA2BBC /* Foundation.framework */; };
+		2721F79C19338E5700FA2BBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2721F79B19338E5700FA2BBC /* CoreGraphics.framework */; };
+		2721F79E19338E5700FA2BBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2721F79D19338E5700FA2BBC /* UIKit.framework */; };
+		2721F7A019338E5700FA2BBC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2721F79F19338E5700FA2BBC /* CoreData.framework */; };
+		2721F7A619338E5700FA2BBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2721F7A419338E5700FA2BBC /* InfoPlist.strings */; };
+		2721F7A819338E5700FA2BBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7A719338E5700FA2BBC /* main.m */; };
+		2721F7AC19338E5700FA2BBC /* AGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7AB19338E5700FA2BBC /* AGAppDelegate.m */; };
+		2721F7AF19338E5700FA2BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2721F7AD19338E5700FA2BBC /* Main.storyboard */; };
+		2721F7B219338E5700FA2BBC /* AGNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7B019338E5700FA2BBC /* AGNews.xcdatamodeld */; };
+		2721F7B519338E5700FA2BBC /* AGMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7B419338E5700FA2BBC /* AGMasterViewController.m */; };
+		2721F7B819338E5700FA2BBC /* AGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7B719338E5700FA2BBC /* AGDetailViewController.m */; };
+		2721F7BA19338E5700FA2BBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2721F7B919338E5700FA2BBC /* Images.xcassets */; };
+		2721F7C119338E5700FA2BBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2721F7C019338E5700FA2BBC /* XCTest.framework */; };
+		2721F7C219338E5700FA2BBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2721F79919338E5600FA2BBC /* Foundation.framework */; };
+		2721F7C319338E5700FA2BBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2721F79D19338E5700FA2BBC /* UIKit.framework */; };
+		2721F7C419338E5700FA2BBC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2721F79F19338E5700FA2BBC /* CoreData.framework */; };
+		2721F7CC19338E5700FA2BBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2721F7CA19338E5700FA2BBC /* InfoPlist.strings */; };
+		2721F7CE19338E5700FA2BBC /* AGNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7CD19338E5700FA2BBC /* AGNewsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2721F7C519338E5700FA2BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2721F78E19338E5600FA2BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2721F79519338E5600FA2BBC;
+			remoteInfo = AGNews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2721F79619338E5600FA2BBC /* AGNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2721F79919338E5600FA2BBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2721F79B19338E5700FA2BBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2721F79D19338E5700FA2BBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2721F79F19338E5700FA2BBC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2721F7A319338E5700FA2BBC /* AGNews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AGNews-Info.plist"; sourceTree = "<group>"; };
+		2721F7A519338E5700FA2BBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2721F7A719338E5700FA2BBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2721F7A919338E5700FA2BBC /* AGNews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AGNews-Prefix.pch"; sourceTree = "<group>"; };
+		2721F7AA19338E5700FA2BBC /* AGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGAppDelegate.h; sourceTree = "<group>"; };
+		2721F7AB19338E5700FA2BBC /* AGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGAppDelegate.m; sourceTree = "<group>"; };
+		2721F7AE19338E5700FA2BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2721F7B119338E5700FA2BBC /* AGNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AGNews.xcdatamodel; sourceTree = "<group>"; };
+		2721F7B319338E5700FA2BBC /* AGMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGMasterViewController.h; sourceTree = "<group>"; };
+		2721F7B419338E5700FA2BBC /* AGMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGMasterViewController.m; sourceTree = "<group>"; };
+		2721F7B619338E5700FA2BBC /* AGDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGDetailViewController.h; sourceTree = "<group>"; };
+		2721F7B719338E5700FA2BBC /* AGDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGDetailViewController.m; sourceTree = "<group>"; };
+		2721F7B919338E5700FA2BBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2721F7BF19338E5700FA2BBC /* AGNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2721F7C019338E5700FA2BBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2721F7C919338E5700FA2BBC /* AGNewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AGNewsTests-Info.plist"; sourceTree = "<group>"; };
+		2721F7CB19338E5700FA2BBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2721F7CD19338E5700FA2BBC /* AGNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGNewsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2721F79319338E5600FA2BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2721F79C19338E5700FA2BBC /* CoreGraphics.framework in Frameworks */,
+				2721F7A019338E5700FA2BBC /* CoreData.framework in Frameworks */,
+				2721F79E19338E5700FA2BBC /* UIKit.framework in Frameworks */,
+				2721F79A19338E5700FA2BBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2721F7BC19338E5700FA2BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2721F7C119338E5700FA2BBC /* XCTest.framework in Frameworks */,
+				2721F7C419338E5700FA2BBC /* CoreData.framework in Frameworks */,
+				2721F7C319338E5700FA2BBC /* UIKit.framework in Frameworks */,
+				2721F7C219338E5700FA2BBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2721F78D19338E5600FA2BBC = {
+			isa = PBXGroup;
+			children = (
+				2721F7A119338E5700FA2BBC /* AGNews */,
+				2721F7C719338E5700FA2BBC /* AGNewsTests */,
+				2721F79819338E5600FA2BBC /* Frameworks */,
+				2721F79719338E5600FA2BBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2721F79719338E5600FA2BBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2721F79619338E5600FA2BBC /* AGNews.app */,
+				2721F7BF19338E5700FA2BBC /* AGNewsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2721F79819338E5600FA2BBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2721F79919338E5600FA2BBC /* Foundation.framework */,
+				2721F79B19338E5700FA2BBC /* CoreGraphics.framework */,
+				2721F79D19338E5700FA2BBC /* UIKit.framework */,
+				2721F79F19338E5700FA2BBC /* CoreData.framework */,
+				2721F7C019338E5700FA2BBC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2721F7A119338E5700FA2BBC /* AGNews */ = {
+			isa = PBXGroup;
+			children = (
+				2721F7AA19338E5700FA2BBC /* AGAppDelegate.h */,
+				2721F7AB19338E5700FA2BBC /* AGAppDelegate.m */,
+				2721F7AD19338E5700FA2BBC /* Main.storyboard */,
+				2721F7B319338E5700FA2BBC /* AGMasterViewController.h */,
+				2721F7B419338E5700FA2BBC /* AGMasterViewController.m */,
+				2721F7B619338E5700FA2BBC /* AGDetailViewController.h */,
+				2721F7B719338E5700FA2BBC /* AGDetailViewController.m */,
+				2721F7B919338E5700FA2BBC /* Images.xcassets */,
+				2721F7B019338E5700FA2BBC /* AGNews.xcdatamodeld */,
+				2721F7A219338E5700FA2BBC /* Supporting Files */,
+			);
+			path = AGNews;
+			sourceTree = "<group>";
+		};
+		2721F7A219338E5700FA2BBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2721F7A319338E5700FA2BBC /* AGNews-Info.plist */,
+				2721F7A419338E5700FA2BBC /* InfoPlist.strings */,
+				2721F7A719338E5700FA2BBC /* main.m */,
+				2721F7A919338E5700FA2BBC /* AGNews-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2721F7C719338E5700FA2BBC /* AGNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2721F7CD19338E5700FA2BBC /* AGNewsTests.m */,
+				2721F7C819338E5700FA2BBC /* Supporting Files */,
+			);
+			path = AGNewsTests;
+			sourceTree = "<group>";
+		};
+		2721F7C819338E5700FA2BBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2721F7C919338E5700FA2BBC /* AGNewsTests-Info.plist */,
+				2721F7CA19338E5700FA2BBC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2721F79519338E5600FA2BBC /* AGNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2721F7D119338E5700FA2BBC /* Build configuration list for PBXNativeTarget "AGNews" */;
+			buildPhases = (
+				2721F79219338E5600FA2BBC /* Sources */,
+				2721F79319338E5600FA2BBC /* Frameworks */,
+				2721F79419338E5600FA2BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AGNews;
+			productName = AGNews;
+			productReference = 2721F79619338E5600FA2BBC /* AGNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2721F7BE19338E5700FA2BBC /* AGNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2721F7D419338E5700FA2BBC /* Build configuration list for PBXNativeTarget "AGNewsTests" */;
+			buildPhases = (
+				2721F7BB19338E5700FA2BBC /* Sources */,
+				2721F7BC19338E5700FA2BBC /* Frameworks */,
+				2721F7BD19338E5700FA2BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2721F7C619338E5700FA2BBC /* PBXTargetDependency */,
+			);
+			name = AGNewsTests;
+			productName = AGNewsTests;
+			productReference = 2721F7BF19338E5700FA2BBC /* AGNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2721F78E19338E5600FA2BBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					2721F7BE19338E5700FA2BBC = {
+						TestTargetID = 2721F79519338E5600FA2BBC;
+					};
+				};
+			};
+			buildConfigurationList = 2721F79119338E5600FA2BBC /* Build configuration list for PBXProject "AGNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2721F78D19338E5600FA2BBC;
+			productRefGroup = 2721F79719338E5600FA2BBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2721F79519338E5600FA2BBC /* AGNews */,
+				2721F7BE19338E5700FA2BBC /* AGNewsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2721F79419338E5600FA2BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2721F7BA19338E5700FA2BBC /* Images.xcassets in Resources */,
+				2721F7A619338E5700FA2BBC /* InfoPlist.strings in Resources */,
+				2721F7AF19338E5700FA2BBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2721F7BD19338E5700FA2BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2721F7CC19338E5700FA2BBC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2721F79219338E5600FA2BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2721F7B219338E5700FA2BBC /* AGNews.xcdatamodeld in Sources */,
+				2721F7AC19338E5700FA2BBC /* AGAppDelegate.m in Sources */,
+				2721F7B519338E5700FA2BBC /* AGMasterViewController.m in Sources */,
+				2721F7A819338E5700FA2BBC /* main.m in Sources */,
+				2721F7B819338E5700FA2BBC /* AGDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2721F7BB19338E5700FA2BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2721F7CE19338E5700FA2BBC /* AGNewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2721F7C619338E5700FA2BBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2721F79519338E5600FA2BBC /* AGNews */;
+			targetProxy = 2721F7C519338E5700FA2BBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2721F7A419338E5700FA2BBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2721F7A519338E5700FA2BBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2721F7AD19338E5700FA2BBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2721F7AE19338E5700FA2BBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2721F7CA19338E5700FA2BBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2721F7CB19338E5700FA2BBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2721F7CF19338E5700FA2BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2721F7D019338E5700FA2BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2721F7D219338E5700FA2BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AGNews/AGNews-Prefix.pch";
+				INFOPLIST_FILE = "AGNews/AGNews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2721F7D319338E5700FA2BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AGNews/AGNews-Prefix.pch";
+				INFOPLIST_FILE = "AGNews/AGNews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2721F7D519338E5700FA2BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AGNews.app/AGNews";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AGNews/AGNews-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AGNewsTests/AGNewsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2721F7D619338E5700FA2BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AGNews.app/AGNews";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AGNews/AGNews-Prefix.pch";
+				INFOPLIST_FILE = "AGNewsTests/AGNewsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2721F79119338E5600FA2BBC /* Build configuration list for PBXProject "AGNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2721F7CF19338E5700FA2BBC /* Debug */,
+				2721F7D019338E5700FA2BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2721F7D119338E5700FA2BBC /* Build configuration list for PBXNativeTarget "AGNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2721F7D219338E5700FA2BBC /* Debug */,
+				2721F7D319338E5700FA2BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2721F7D419338E5700FA2BBC /* Build configuration list for PBXNativeTarget "AGNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2721F7D519338E5700FA2BBC /* Debug */,
+				2721F7D619338E5700FA2BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2721F7B019338E5700FA2BBC /* AGNews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2721F7B119338E5700FA2BBC /* AGNews.xcdatamodel */,
+			);
+			currentVersion = 2721F7B119338E5700FA2BBC /* AGNews.xcdatamodel */;
+			path = AGNews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2721F78E19338E5600FA2BBC /* Project object */;
+}
