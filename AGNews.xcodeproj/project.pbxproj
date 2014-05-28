@@ -31,6 +31,7 @@
 		2721F7F719356A4F00FA2BBC /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7F219356A4F00FA2BBC /* Channel.m */; };
 		2721F7F819356A4F00FA2BBC /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7F419356A4F00FA2BBC /* Item.m */; };
 		2721F7FB1935759E00FA2BBC /* AGConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7FA1935759E00FA2BBC /* AGConnector.m */; };
+		2721F7FE19357A8400FA2BBC /* AGResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7FD19357A8400FA2BBC /* AGResponseParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		2721F7F419356A4F00FA2BBC /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Model/Item.m; sourceTree = "<group>"; };
 		2721F7F91935759E00FA2BBC /* AGConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGConnector.h; sourceTree = "<group>"; };
 		2721F7FA1935759E00FA2BBC /* AGConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGConnector.m; sourceTree = "<group>"; };
+		2721F7FC19357A8400FA2BBC /* AGResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGResponseParser.h; sourceTree = "<group>"; };
+		2721F7FD19357A8400FA2BBC /* AGResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGResponseParser.m; sourceTree = "<group>"; };
 		2E9D53DC322E46E28F0197DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B3CFE9070E49BF80E51BFE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,10 +193,7 @@
 		2721F7DD1933A53200FA2BBC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2721F7ED19356A4F00FA2BBC /* _Channel.h */,
-				2721F7EE19356A4F00FA2BBC /* _Channel.m */,
-				2721F7EF19356A4F00FA2BBC /* _Item.h */,
-				2721F7F019356A4F00FA2BBC /* _Item.m */,
+				2721F7FF193621EB00FA2BBC /* mogenerator */,
 				2721F7F119356A4F00FA2BBC /* Channel.h */,
 				2721F7F219356A4F00FA2BBC /* Channel.m */,
 				2721F7F319356A4F00FA2BBC /* Item.h */,
@@ -201,8 +201,21 @@
 				2721F7B019338E5700FA2BBC /* AGNews.xcdatamodeld */,
 				2721F7F91935759E00FA2BBC /* AGConnector.h */,
 				2721F7FA1935759E00FA2BBC /* AGConnector.m */,
+				2721F7FC19357A8400FA2BBC /* AGResponseParser.h */,
+				2721F7FD19357A8400FA2BBC /* AGResponseParser.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		2721F7FF193621EB00FA2BBC /* mogenerator */ = {
+			isa = PBXGroup;
+			children = (
+				2721F7EF19356A4F00FA2BBC /* _Item.h */,
+				2721F7F019356A4F00FA2BBC /* _Item.m */,
+				2721F7ED19356A4F00FA2BBC /* _Channel.h */,
+				2721F7EE19356A4F00FA2BBC /* _Channel.m */,
+			);
+			name = mogenerator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +358,7 @@
 				2721F7A819338E5700FA2BBC /* main.m in Sources */,
 				2721F7FB1935759E00FA2BBC /* AGConnector.m in Sources */,
 				2721F7B819338E5700FA2BBC /* AGDetailViewController.m in Sources */,
+				2721F7FE19357A8400FA2BBC /* AGResponseParser.m in Sources */,
 				2721F7F719356A4F00FA2BBC /* Channel.m in Sources */,
 				2721F7F519356A4F00FA2BBC /* _Channel.m in Sources */,
 				2721F7F619356A4F00FA2BBC /* _Item.m in Sources */,
