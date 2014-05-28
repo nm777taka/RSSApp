@@ -26,6 +26,10 @@
 		2721F7C419338E5700FA2BBC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2721F79F19338E5700FA2BBC /* CoreData.framework */; };
 		2721F7CC19338E5700FA2BBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2721F7CA19338E5700FA2BBC /* InfoPlist.strings */; };
 		2721F7CE19338E5700FA2BBC /* AGNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7CD19338E5700FA2BBC /* AGNewsTests.m */; };
+		2721F7F519356A4F00FA2BBC /* _Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7EE19356A4F00FA2BBC /* _Channel.m */; };
+		2721F7F619356A4F00FA2BBC /* _Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7F019356A4F00FA2BBC /* _Item.m */; };
+		2721F7F719356A4F00FA2BBC /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7F219356A4F00FA2BBC /* Channel.m */; };
+		2721F7F819356A4F00FA2BBC /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7F419356A4F00FA2BBC /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,14 @@
 		2721F7C919338E5700FA2BBC /* AGNewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AGNewsTests-Info.plist"; sourceTree = "<group>"; };
 		2721F7CB19338E5700FA2BBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2721F7CD19338E5700FA2BBC /* AGNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGNewsTests.m; sourceTree = "<group>"; };
+		2721F7ED19356A4F00FA2BBC /* _Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Channel.h; path = Model/_Channel.h; sourceTree = "<group>"; };
+		2721F7EE19356A4F00FA2BBC /* _Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Channel.m; path = Model/_Channel.m; sourceTree = "<group>"; };
+		2721F7EF19356A4F00FA2BBC /* _Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Item.h; path = Model/_Item.h; sourceTree = "<group>"; };
+		2721F7F019356A4F00FA2BBC /* _Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Item.m; path = Model/_Item.m; sourceTree = "<group>"; };
+		2721F7F119356A4F00FA2BBC /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Channel.h; path = Model/Channel.h; sourceTree = "<group>"; };
+		2721F7F219356A4F00FA2BBC /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Channel.m; path = Model/Channel.m; sourceTree = "<group>"; };
+		2721F7F319356A4F00FA2BBC /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Model/Item.h; sourceTree = "<group>"; };
+		2721F7F419356A4F00FA2BBC /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Model/Item.m; sourceTree = "<group>"; };
 		2E9D53DC322E46E28F0197DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B3CFE9070E49BF80E51BFE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +187,14 @@
 		2721F7DD1933A53200FA2BBC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2721F7ED19356A4F00FA2BBC /* _Channel.h */,
+				2721F7EE19356A4F00FA2BBC /* _Channel.m */,
+				2721F7EF19356A4F00FA2BBC /* _Item.h */,
+				2721F7F019356A4F00FA2BBC /* _Item.m */,
+				2721F7F119356A4F00FA2BBC /* Channel.h */,
+				2721F7F219356A4F00FA2BBC /* Channel.m */,
+				2721F7F319356A4F00FA2BBC /* Item.h */,
+				2721F7F419356A4F00FA2BBC /* Item.m */,
 				2721F7B019338E5700FA2BBC /* AGNews.xcdatamodeld */,
 			);
 			name = Model;
@@ -313,11 +333,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2721F7F819356A4F00FA2BBC /* Item.m in Sources */,
 				2721F7B219338E5700FA2BBC /* AGNews.xcdatamodeld in Sources */,
 				2721F7AC19338E5700FA2BBC /* AGAppDelegate.m in Sources */,
 				2721F7B519338E5700FA2BBC /* AGChannelListViewController.m in Sources */,
 				2721F7A819338E5700FA2BBC /* main.m in Sources */,
 				2721F7B819338E5700FA2BBC /* AGDetailViewController.m in Sources */,
+				2721F7F719356A4F00FA2BBC /* Channel.m in Sources */,
+				2721F7F519356A4F00FA2BBC /* _Channel.m in Sources */,
+				2721F7F619356A4F00FA2BBC /* _Item.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
