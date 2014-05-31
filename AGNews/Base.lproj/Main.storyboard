@@ -56,11 +56,35 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz"/>
+                    <navigationItem key="navigationItem" title="Title" id="TDb-a4-B2g">
+                        <barButtonItem key="leftBarButtonItem" title="Feed" id="D2o-iE-lvO">
+                            <connections>
+                                <segue destination="voq-5U-2fc" kind="modal" identifier="GoToFeedView" id="DlS-ZL-5UZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="MO1-Nv-Yd9">
+            <objects>
+                <viewController id="voq-5U-2fc" customClass="AGFeedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xkB-A7-v2a"/>
+                        <viewControllerLayoutGuide type="bottom" id="flH-az-Dxh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TB6-b5-hPf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paz-Yy-pEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="874"/>
         </scene>
         <!--Item List View Controller - Detail-->
         <scene sceneID="Cn3-H9-jdl">

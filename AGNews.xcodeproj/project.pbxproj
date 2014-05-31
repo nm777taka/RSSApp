@@ -18,7 +18,7 @@
 		2721F7AF19338E5700FA2BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2721F7AD19338E5700FA2BBC /* Main.storyboard */; };
 		2721F7B219338E5700FA2BBC /* AGNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7B019338E5700FA2BBC /* AGNews.xcdatamodeld */; };
 		2721F7B519338E5700FA2BBC /* AGChannelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7B419338E5700FA2BBC /* AGChannelListViewController.m */; };
-		2721F7B819338E5700FA2BBC /* AGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7B719338E5700FA2BBC /* AGDetailViewController.m */; };
+		2721F7B819338E5700FA2BBC /* AGIemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7B719338E5700FA2BBC /* AGIemListViewController.m */; };
 		2721F7BA19338E5700FA2BBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2721F7B919338E5700FA2BBC /* Images.xcassets */; };
 		2721F7C119338E5700FA2BBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2721F7C019338E5700FA2BBC /* XCTest.framework */; };
 		2721F7C219338E5700FA2BBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2721F79919338E5600FA2BBC /* Foundation.framework */; };
@@ -34,6 +34,8 @@
 		2721F7FE19357A8400FA2BBC /* AGResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7FD19357A8400FA2BBC /* AGResponseParser.m */; };
 		2721F8031937710E00FA2BBC /* AGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F8021937710E00FA2BBC /* AGNotification.m */; };
 		2721F807193988BA00FA2BBC /* AGDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F806193988BA00FA2BBC /* AGDataManager.m */; };
+		2721F80A1939C40700FA2BBC /* AGFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F8091939C40700FA2BBC /* AGFeedViewController.m */; };
+		2721F80D1939C47C00FA2BBC /* AGFeedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F80C1939C47C00FA2BBC /* AGFeedListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +65,7 @@
 		2721F7B319338E5700FA2BBC /* AGChannelListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGChannelListViewController.h; sourceTree = "<group>"; };
 		2721F7B419338E5700FA2BBC /* AGChannelListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGChannelListViewController.m; sourceTree = "<group>"; };
 		2721F7B619338E5700FA2BBC /* AGItemListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGItemListViewController.h; sourceTree = "<group>"; };
-		2721F7B719338E5700FA2BBC /* AGDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGDetailViewController.m; sourceTree = "<group>"; };
+		2721F7B719338E5700FA2BBC /* AGIemListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGIemListViewController.m; sourceTree = "<group>"; };
 		2721F7B919338E5700FA2BBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2721F7BF19338E5700FA2BBC /* AGNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2721F7C019338E5700FA2BBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -86,6 +88,10 @@
 		2721F8021937710E00FA2BBC /* AGNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGNotification.m; sourceTree = "<group>"; };
 		2721F805193988BA00FA2BBC /* AGDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDataManager.h; sourceTree = "<group>"; };
 		2721F806193988BA00FA2BBC /* AGDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDataManager.m; sourceTree = "<group>"; };
+		2721F8081939C40700FA2BBC /* AGFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGFeedViewController.h; sourceTree = "<group>"; };
+		2721F8091939C40700FA2BBC /* AGFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGFeedViewController.m; sourceTree = "<group>"; };
+		2721F80B1939C47C00FA2BBC /* AGFeedListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGFeedListViewController.h; sourceTree = "<group>"; };
+		2721F80C1939C47C00FA2BBC /* AGFeedListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGFeedListViewController.m; sourceTree = "<group>"; };
 		2E9D53DC322E46E28F0197DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B3CFE9070E49BF80E51BFE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,7 +167,11 @@
 				2721F7B319338E5700FA2BBC /* AGChannelListViewController.h */,
 				2721F7B419338E5700FA2BBC /* AGChannelListViewController.m */,
 				2721F7B619338E5700FA2BBC /* AGItemListViewController.h */,
-				2721F7B719338E5700FA2BBC /* AGDetailViewController.m */,
+				2721F7B719338E5700FA2BBC /* AGIemListViewController.m */,
+				2721F80B1939C47C00FA2BBC /* AGFeedListViewController.h */,
+				2721F80C1939C47C00FA2BBC /* AGFeedListViewController.m */,
+				2721F8081939C40700FA2BBC /* AGFeedViewController.h */,
+				2721F8091939C40700FA2BBC /* AGFeedViewController.m */,
 				2721F7B919338E5700FA2BBC /* Images.xcassets */,
 				2721F7A219338E5700FA2BBC /* Supporting Files */,
 			);
@@ -373,12 +383,14 @@
 				2721F7B219338E5700FA2BBC /* AGNews.xcdatamodeld in Sources */,
 				2721F7AC19338E5700FA2BBC /* AGAppDelegate.m in Sources */,
 				2721F7B519338E5700FA2BBC /* AGChannelListViewController.m in Sources */,
+				2721F80A1939C40700FA2BBC /* AGFeedViewController.m in Sources */,
 				2721F7A819338E5700FA2BBC /* main.m in Sources */,
 				2721F7FB1935759E00FA2BBC /* AGConnector.m in Sources */,
-				2721F7B819338E5700FA2BBC /* AGDetailViewController.m in Sources */,
+				2721F7B819338E5700FA2BBC /* AGIemListViewController.m in Sources */,
 				2721F7FE19357A8400FA2BBC /* AGResponseParser.m in Sources */,
 				2721F7F719356A4F00FA2BBC /* Channel.m in Sources */,
 				2721F7F519356A4F00FA2BBC /* _Channel.m in Sources */,
+				2721F80D1939C47C00FA2BBC /* AGFeedListViewController.m in Sources */,
 				2721F8031937710E00FA2BBC /* AGNotification.m in Sources */,
 				2721F7F619356A4F00FA2BBC /* _Item.m in Sources */,
 				2721F807193988BA00FA2BBC /* AGDataManager.m in Sources */,
