@@ -7,7 +7,8 @@
 //
 
 #import "AGConnector.h"
-
+#import "AGResponseParser.h"
+#import "AGNotification.h"
 @implementation AGConnector
 
 #pragma mark init
@@ -35,6 +36,7 @@ static AGConnector* _sharedInstance = nil;
     return self;
 }
 
+#pragma mark -- カスタムgetter --
 - (BOOL)isNetworkAccessing
 {
     return _retrieveTitleParsers.count > 0 || _refreshAllChannelParsers.count > 0;
@@ -46,8 +48,79 @@ static AGConnector* _sharedInstance = nil;
     //現在のネットワークアクセス状況を取得
     BOOL networkAccessing = self.networkAccessing;
     
-    //登録しているチャンネルを取得
-    //パーサを作ってから作る
+    //レスポンスパーサーの作成
+    AGResponseParser* parser;
+    parser = [[AGResponseParser alloc]init];
+    parser.feedUrlString = urlString;
+    parser.delegate = self;
+    
+    //パース開始
+    [parser parse];
+    
+    //パーサの追加
+    [_retrieveTitleParsers addObject:parser];
+    
+    //networkAccessingの値を更新
+    if (networkAccessing != self.networkAccessing) { //ゲッターは独自に設定してる
+        [self willChangeValueForKey:@"networkAccessing"];
+        [self didChangeValueForKey:@"networkAccessing"];
+    }
+    
+    //userInfo
+    NSMutableDictionary* userInfo;
+    userInfo = [NSMutableDictionary dictionary];
+    [userInfo setObject:parser forKey:@"parser"];
+    
+    //ノーティフィケーション
+    [[NSNotificationCenter defaultCenter]postNotificationName:AGConnectorDidBeginRetriveTitle object:userInfo];
+    
+}
+
+- (void)cancelRetrieveTitleWithUrlString:(NSString *)urlString
+{
+    //指定されたパーサを検索
+    for (AGResponseParser* parser in _retrieveTitleParsers) {
+        //パーサをキャンセル
+        [parser cancel];
+        
+        //userinfo
+        NSMutableDictionary* userInfo;
+        userInfo = [NSMutableDictionary dictionary];
+        [userInfo setObject:parser forKey:@"parser"];
+        
+        //通知
+        [[NSNotificationCenter defaultCenter]postNotificationName:AGConnectorDidFinishRetriveTitle object:userInfo];
+        
+        //networkAccessing更新
+        [self willChangeValueForKey:@"networkAccessing"];
+        [_retrieveTitleParsers removeObject:parser];
+        [self didChangeValueForKey:@"networkAccessing"];
+        
+        break;
+    }
+}
+
+#pragma mark -- 登録したすべてのチャンネルの更新 --
+
+- (BOOL)isRefreshingChannels
+{
+    return _refreshAllChannelParsers.count > 0;
+    
+}
+
+- (void)refreshAllChannels
+{
+    //現在の更新状況を確認(一度に一回まで)
+    if ([self isRefreshingChannels]) {
+        return;
+    }
+    
+    //現在のネットワーク状況
+    BOOL networkAccessing;
+    networkAccessing = self.networkAccessing;
+    
+    //登録してるチャンネルの取得 (ソートされてる)
+    NSArray* channels;
 }
 
 @end

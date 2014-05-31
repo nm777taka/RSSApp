@@ -32,6 +32,8 @@
 		2721F7F819356A4F00FA2BBC /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7F419356A4F00FA2BBC /* Item.m */; };
 		2721F7FB1935759E00FA2BBC /* AGConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7FA1935759E00FA2BBC /* AGConnector.m */; };
 		2721F7FE19357A8400FA2BBC /* AGResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F7FD19357A8400FA2BBC /* AGResponseParser.m */; };
+		2721F8031937710E00FA2BBC /* AGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F8021937710E00FA2BBC /* AGNotification.m */; };
+		2721F807193988BA00FA2BBC /* AGDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2721F806193988BA00FA2BBC /* AGDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,10 @@
 		2721F7FA1935759E00FA2BBC /* AGConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGConnector.m; sourceTree = "<group>"; };
 		2721F7FC19357A8400FA2BBC /* AGResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGResponseParser.h; sourceTree = "<group>"; };
 		2721F7FD19357A8400FA2BBC /* AGResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGResponseParser.m; sourceTree = "<group>"; };
+		2721F8011937710E00FA2BBC /* AGNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGNotification.h; sourceTree = "<group>"; };
+		2721F8021937710E00FA2BBC /* AGNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGNotification.m; sourceTree = "<group>"; };
+		2721F805193988BA00FA2BBC /* AGDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDataManager.h; sourceTree = "<group>"; };
+		2721F806193988BA00FA2BBC /* AGDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDataManager.m; sourceTree = "<group>"; };
 		2E9D53DC322E46E28F0197DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B3CFE9070E49BF80E51BFE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +153,7 @@
 		2721F7A119338E5700FA2BBC /* AGNews */ = {
 			isa = PBXGroup;
 			children = (
+				2721F800193770D800FA2BBC /* utility */,
 				2721F7DD1933A53200FA2BBC /* Model */,
 				2721F7AA19338E5700FA2BBC /* AGAppDelegate.h */,
 				2721F7AB19338E5700FA2BBC /* AGAppDelegate.m */,
@@ -198,11 +205,12 @@
 				2721F7F219356A4F00FA2BBC /* Channel.m */,
 				2721F7F319356A4F00FA2BBC /* Item.h */,
 				2721F7F419356A4F00FA2BBC /* Item.m */,
-				2721F7B019338E5700FA2BBC /* AGNews.xcdatamodeld */,
 				2721F7F91935759E00FA2BBC /* AGConnector.h */,
 				2721F7FA1935759E00FA2BBC /* AGConnector.m */,
 				2721F7FC19357A8400FA2BBC /* AGResponseParser.h */,
 				2721F7FD19357A8400FA2BBC /* AGResponseParser.m */,
+				2721F805193988BA00FA2BBC /* AGDataManager.h */,
+				2721F806193988BA00FA2BBC /* AGDataManager.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -214,8 +222,18 @@
 				2721F7F019356A4F00FA2BBC /* _Item.m */,
 				2721F7ED19356A4F00FA2BBC /* _Channel.h */,
 				2721F7EE19356A4F00FA2BBC /* _Channel.m */,
+				2721F7B019338E5700FA2BBC /* AGNews.xcdatamodeld */,
 			);
 			name = mogenerator;
+			sourceTree = "<group>";
+		};
+		2721F800193770D800FA2BBC /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				2721F8011937710E00FA2BBC /* AGNotification.h */,
+				2721F8021937710E00FA2BBC /* AGNotification.m */,
+			);
+			name = utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +379,9 @@
 				2721F7FE19357A8400FA2BBC /* AGResponseParser.m in Sources */,
 				2721F7F719356A4F00FA2BBC /* Channel.m in Sources */,
 				2721F7F519356A4F00FA2BBC /* _Channel.m in Sources */,
+				2721F8031937710E00FA2BBC /* AGNotification.m in Sources */,
 				2721F7F619356A4F00FA2BBC /* _Item.m in Sources */,
+				2721F807193988BA00FA2BBC /* AGDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
