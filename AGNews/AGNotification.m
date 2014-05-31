@@ -12,4 +12,9 @@
 
 NSString* const AGConnectorDidBeginRetriveTitle = @"AGConnectorDidBeginRetriveTitle";
 NSString* const AGConnectorDidFinishRetriveTitle = @"AGConnectorDidFinishRetriveTitle";
+NSString* const AGConnectorDidBeginRefreshAllChannels = @"AGConnectorDidBeginRefreshAllChannels";
+
+NSString* const AGConnectorDidFinishRefreshAllChannels = @"AGConnectorDidFinishRefreshAllChannels";
+NSString* const AGConnectorInProgressRefreshAllChannels = @"AGConnectorInProgressRefreshAllChannels";
+
 @end

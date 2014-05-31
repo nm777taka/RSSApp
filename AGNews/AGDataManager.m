@@ -23,7 +23,9 @@ static AGDataManager* _sharedInstance = nil;
     return _sharedInstance;
 }
 
-- (NSArray *)fetchSortedChannels
+#pragma mark -- カスタムGetter --
+
+- (NSArray *)sortedChannels
 {
     NSArray* sortedChannels = [NSArray new];
     
@@ -95,6 +97,11 @@ static AGDataManager* _sharedInstance = nil;
     newItem.identifier = identifier;
     
     return newItem;
+}
+
+- (void)deleteCurrentItem:(Item *)currentItem
+{
+    [currentItem MR_deleteEntity];
 }
 
 #pragma mark -- 永続化 --

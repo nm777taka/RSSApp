@@ -13,7 +13,7 @@
 
 @interface AGDataManager : NSObject
 
-@property NSArray* sortedChannels;
+@property(nonatomic) NSArray* sortedChannels;
 
 + (AGDataManager *)sharedManager;
 
@@ -23,6 +23,7 @@
 
 //アイテム操作
 - (Item*)insertNewItem;
+- (void)deleteCurrentItem:(Item *)currentItem;
 
 - (void)save;
 

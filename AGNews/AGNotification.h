@@ -12,7 +12,9 @@
 
 UIKIT_EXTERN NSString* const AGConnectorDidBeginRetriveTitle;
 UIKIT_EXTERN NSString* const AGConnectorDidFinishRetriveTitle;
-    
+UIKIT_EXTERN NSString* const AGConnectorDidBeginRefreshAllChannels;
+UIKIT_EXTERN NSString* const AGConnectorDidFinishRefreshAllChannels;
+UIKIT_EXTERN NSString* const AGConnectorInProgressRefreshAllChannels;
 
 
 @end
